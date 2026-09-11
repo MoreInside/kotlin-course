@@ -1,4 +1,4 @@
-package lessons.lesson03
+package lessons.lesson03.homework
 
 val name: String = "Name"
 val age: Int = 38 //mutable
