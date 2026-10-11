@@ -1,6 +1,5 @@
 package lessons.lesson10.homework
 
-import java.time.LocalDate
 
 fun main() {
 
@@ -81,15 +80,29 @@ fun main() {
     }
 //=========Задачи на подбор оптимального типа для словаря=============
 //Словарь библиотека: Ключи - автор книги, значения - список книг
-    val emptyMap13 = mutableMapOf<String, MutableList<String>>()
+    val libraryMap = mutableMapOf<String, MutableList<String>>(
+        "Достоевский" to mutableListOf("Преступление и наказание", "Идиот"),
+        "Толстой" to mutableListOf("Война и мир", "Анна Каренина"),
+        "Грибоедов" to mutableListOf("Горе от ума")
+    )
 
 //Справочник растений: Ключи - типы растений (например, "Цветы", "Деревья"), значения - списки названий растений
-    val emptyMap14 = mutableMapOf<String, MutableList<String>>()
+    val floraMap = mutableMapOf<String, MutableList<String>>(
+        "Цветы" to mutableListOf("Ромашка"),
+        "Деревья" to mutableListOf("Сосна")
+    )
 
 //Четвертьфинала: Ключи - названия спортивных команд, значения - списки игроков каждой команды
-    val emptyMap15 = mutableMapOf<String, MutableList<String>>()
+    val teamsMap = mutableMapOf<String, MutableList<String>>(
+        "Спартак" to mutableListOf("Александр", "Михаил", "Иван"),
+        "Зенит" to mutableListOf("Дмитрий", "Андрей", "Сергей"),
+        "Динамо" to mutableListOf("Никита", "Павел", "Артём")
+    )
 
 //Курс лечения: Ключи - даты, значения - список препаратов принимаемых в дату
-    val emptyMap16 = mutableMapOf<LocalDate, List<String>>()
+    val emptyMap16 = mutableMapOf<String, MutableList<String>>(
+        "10.10.2026" to mutableListOf("Aspirin"),
+        "11.10.2026" to mutableListOf("Paracetamol")
+    )
 
 }
