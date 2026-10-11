@@ -100,9 +100,19 @@ fun main() {
     )
 
 //Курс лечения: Ключи - даты, значения - список препаратов принимаемых в дату
-    val emptyMap16 = mutableMapOf<String, MutableList<String>>(
+    val aptekaMap = mutableMapOf<String, MutableList<String>>(
         "10.10.2026" to mutableListOf("Aspirin"),
         "11.10.2026" to mutableListOf("Paracetamol")
     )
-
+    //Словарь путешественника: Ключи - страны, значения - словари из городов со списком интересных мест.
+    val travelMap = mutableMapOf<String, Map<String, List<String>>>(
+        "Италия" to mapOf(
+            "Рим" to listOf("Колизей", "Фонтан Треви"),
+            "Венеция" to listOf("Площадь Сан-Марко", "Дворец дожей")
+        ),
+        "Франция" to mapOf(
+            "Париж" to listOf("Эйфелева башня", "Лувр"),
+            "Лион" to listOf("Старый город", "Базилика Нотр-Дам-де-Фурвьер")
+        )
+    )
 }
