@@ -86,9 +86,10 @@ fun main() {
     )
 
 //10. Создайте копию неизменяемого словаря с данными о версиях тестируемого ПО, добавив новую версию.
-    println(
-        testVersions + mapOf("Chrome" to "140.0", "Backend API" to "2.1.0")
+    val updatedTestVersions = testVersions + mapOf(
+        "Chrome" to "140.0", "Backend API" to "2.1.0"
     )
+    println(updatedTestVersions)
 
 //11. Используя словарь с настройками тестирования для различных мобильных устройств (ключ — модель устройства, значение - строка с настройками),
 // получите настройки для конкретной модели или верните настройки по умолчанию.
@@ -183,6 +184,6 @@ fun main() {
 // которые не прошли успешно и содержат в названии “optional”.
     println(testServiceResults.filter { (key, value) ->
         key.contains("optional") && //содержит слово
-        value != "Passed" // не содержит статус
+                value != "Passed" // не содержит статус
     })
 }
