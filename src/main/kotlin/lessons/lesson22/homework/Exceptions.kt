@@ -1,13 +1,13 @@
 package lessons.lesson22.homework
 
 fun main() {
-    // handleExceptions(null)
-    // handleExceptions("text")
-    // handleExceptions(listOf(1, 2))
-    // handleExceptions(listOf(1, 2, 3))
-    // handleExceptions(listOf(1, 2, "text"))
-    handleExceptions(listOf(1, 2, "4"))
-    //handleExceptions(listOf(1, 2, "3"))
+    //handleExceptions(null)
+    //handleExceptions("text")
+    //handleExceptions(listOf(1, 2))
+    //handleExceptions(listOf(1, 2, 3))
+    //handleExceptions(listOf(1, 2, "text"))
+    //handleExceptions(listOf(1, 2, "4"))
+    handleExceptions(listOf(1, 2, "3"))
 
 //Задание 1. Воспроизвести фрагменты кода, которые могут привести к возникновению исключений:
 //Задание 9. Оберни все вызовы из предыдущего задания в блок try-catch
